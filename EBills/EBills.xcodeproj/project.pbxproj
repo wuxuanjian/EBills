@@ -18,7 +18,6 @@
 		0C20B3F9171BF422004F668C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C20B3F8171BF422004F668C /* CoreGraphics.framework */; };
 		0C20B3FF171BF422004F668C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C20B3FD171BF422004F668C /* InfoPlist.strings */; };
 		0C20B401171BF422004F668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C20B400171BF422004F668C /* main.m */; };
-		0C20B405171BF422004F668C /* EBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C20B404171BF422004F668C /* EBAppDelegate.m */; };
 		0C20B407171BF422004F668C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C20B406171BF422004F668C /* Default.png */; };
 		0C20B409171BF422004F668C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C20B408171BF422004F668C /* Default@2x.png */; };
 		0C20B40B171BF422004F668C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C20B40A171BF422004F668C /* Default-568h@2x.png */; };
@@ -83,6 +82,7 @@
 		7B8FF2E117509425005094EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8FF2E017509425005094EB /* QuartzCore.framework */; };
 		7B8FF2E61750C8E8005094EB /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FF2E51750C8E8005094EB /* QBFlatButton.m */; };
 		7B8FF2EA1750CDC3005094EB /* FlatPillButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FF2E91750CDC3005094EB /* FlatPillButton.m */; };
+		83B1A3FB18C9BC3C00998BC8 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B1A3FA18C9BC3C00998BC8 /* CBAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,8 +103,6 @@
 		0C20B3FE171BF422004F668C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0C20B400171BF422004F668C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C20B402171BF422004F668C /* EBills-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EBills-Prefix.pch"; sourceTree = "<group>"; };
-		0C20B403171BF422004F668C /* EBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBAppDelegate.h; sourceTree = "<group>"; };
-		0C20B404171BF422004F668C /* EBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBAppDelegate.m; sourceTree = "<group>"; };
 		0C20B406171BF422004F668C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0C20B408171BF422004F668C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0C20B40A171BF422004F668C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -217,6 +215,8 @@
 		7B8FF2E51750C8E8005094EB /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBFlatButton.m; path = common/button/QBFlatButton/QBFlatButton.m; sourceTree = "<group>"; };
 		7B8FF2E81750CDC3005094EB /* FlatPillButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlatPillButton.h; path = common/button/FlatPillButton/FlatPillButton.h; sourceTree = "<group>"; };
 		7B8FF2E91750CDC3005094EB /* FlatPillButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlatPillButton.m; path = common/button/FlatPillButton/FlatPillButton.m; sourceTree = "<group>"; };
+		83B1A3F918C9BC3C00998BC8 /* CBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
+		83B1A3FA18C9BC3C00998BC8 /* CBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,8 +343,8 @@
 		0C20B3FA171BF422004F668C /* EBills */ = {
 			isa = PBXGroup;
 			children = (
-				0C20B403171BF422004F668C /* EBAppDelegate.h */,
-				0C20B404171BF422004F668C /* EBAppDelegate.m */,
+				83B1A3F918C9BC3C00998BC8 /* CBAppDelegate.h */,
+				83B1A3FA18C9BC3C00998BC8 /* CBAppDelegate.m */,
 				0C20B3FB171BF422004F668C /* Supporting Files */,
 			);
 			path = EBills;
@@ -779,7 +779,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C20B401171BF422004F668C /* main.m in Sources */,
-				0C20B405171BF422004F668C /* EBAppDelegate.m in Sources */,
 				0C20B432171BFB36004F668C /* PlausibleDatabase.m in Sources */,
 				0C20B433171BFB36004F668C /* PLDatabaseMigrationManager.m in Sources */,
 				0C20B434171BFB36004F668C /* PLSqliteConnectionProvider.m in Sources */,
@@ -820,6 +819,7 @@
 				7B8FF2E61750C8E8005094EB /* QBFlatButton.m in Sources */,
 				7B8FF2EA1750CDC3005094EB /* FlatPillButton.m in Sources */,
 				7B64265D175124EB00BCE8A0 /* UITextField+LimitLength.m in Sources */,
+				83B1A3FB18C9BC3C00998BC8 /* CBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
